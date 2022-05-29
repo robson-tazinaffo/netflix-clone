@@ -22,9 +22,7 @@ Reconstruir a interface do principal site de streaming mundial, utilizando HTML5
 6. Top 10 da semana com capas e legendas.
 7. Tela de trailler da série The Flash.
 
-
-
-![Alt text](./images/image-readme.png "Optional title")
+![Alt text](./img/image-readme.png "Optional title")
 
 
 
