@@ -1,0 +1,459 @@
+:root {
+  --vermelho: #e50914;
+  --preta: #141414;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* NORMAL */
+@media screen and (min-width: 1024px) {
+  /*elementos base*/
+  body {
+    background: var(--preta);
+    font-family: 'Arial', Times, serif;
+    color: white;
+  }
+
+  /* ============= header ================ */
+
+  header .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  header .logo {
+    margin-left: 5px;
+    height: 40px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  header nav a {
+    text-decoration: none;
+    color: #aaa;
+    margin-right: 30px;
+  }
+
+  header nav a:hover {
+    color: #fff;
+  }
+
+  header .nav-botao {
+    background-color: #e50914;
+    border: 1px solid #e50914;
+    color: white;
+
+    padding: 10px 25px;
+    margin-top: 15px;
+    /* margin-right: 15px; */
+    font-size: 12px;
+
+    cursor: pointer;
+    transition: 0.3s ease all;
+  }
+
+  header .nav-botao:hover {
+    background-color: #b81f27;
+    color: white;
+  }
+
+  header .nav-botao-entrar {
+    background-color: #0f0e0e;
+    border: 1px solid gray;
+    color: white;
+
+    padding: 10px 25px;
+    margin-top: 15px;
+    /* margin-right: 5px; */
+    font-size: 12px;
+
+    cursor: pointer;
+    transition: 0.3s ease all;
+  }
+
+  header .nav-botao-entrar:hover {
+    background-color: #3a3939;
+    color: white;
+  }
+
+  /*  ============================== */
+
+  .container {
+    margin-left: 30px;
+  }
+
+  /*filme principal*/
+  .filme-principal {
+    font-size: 16px;
+    background-repeat: no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5) 100%),
+      url('../img/capa-flash.jpg');
+
+    height: 400px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .filme-principal .logo-serie {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    position: absolute;
+    top: 5px;
+    width: 380px;
+    height: 180px;
+    margin-bottom: 20px;
+  }
+
+  .filme-principal .titulo {
+    margin-top: 15%;
+    font-size: 18px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+  }
+
+  .filme-principal .titulo-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch;
+    justify-content: flex-start;
+    color: #aaa;
+    margin-right: 15px;
+
+    margin-top: 15px;
+    margin-bottom: 15px;
+    gap: 5px;
+  }
+
+  .filme-principal .descricao {
+    margin-top: 10px;
+    margin-bottom: 15px;
+  }
+
+  .filme-principal .title-data-info-item-label {
+    color: #aaa;
+  }
+
+  .filme-principal .title-data-info {
+    display: flex;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    gap: 5px;
+  }
+
+  .panel-sombra {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    background-color: rgba(30, 30, 30, 0.5);
+    height: 50px;
+    color: #aaa;
+    position: relative;
+
+    /* background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 1.8) 100%);  */
+  }
+
+  .filme-principal .player {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 60vw;
+    width: 860;
+    height: 515;
+  }
+
+  .botao {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+
+    padding: 15px 30px;
+    margin-top: 15px;
+    margin-right: 15px;
+    font-size: 12px;
+
+    cursor: pointer;
+    transition: 0.3s ease all;
+  }
+
+  .botao:hover {
+    background-color: white;
+    color: black;
+  }
+
+  .botao i {
+    margin-right: 8px;
+  }
+
+  .container {
+    margin-left: 20px;
+  }
+
+  .filme-principal .container {
+    width: 70%;
+  }
+
+  .box-filme {
+    height: 100%;
+    width: 100%;
+    display: block;
+    cursor: pointer;
+  }
+
+  .carrosel-filmes {
+    margin-top: 5px;
+  }
+
+  .carrosel-filmes h5 {
+    margin-top: 8px;
+    color: #aaa;
+    text-align: center;
+  }
+}
+
+/* MOBILE */
+@media screen and (max-width: 700px) {
+  /*elementos base*/
+  body {
+    background: var(--preta);
+    font-family: 'Arial', Times, serif;
+    color: white;
+  }
+
+  /* ============= header ================ */
+
+  header .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+
+  header .logo {
+    display: flex;
+    flex-direction: column;
+    /* margin-left: 5px;
+    color: var(--vermelho);
+    font-family: 'Arial Black', Times;
+    font-size: 12px;
+    */
+
+    height: 30px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  header nav a {
+    text-decoration: none;
+    color: #aaa;
+    margin-right: 10px;
+  }
+
+  header nav a:hover {
+    color: #fff;
+  }
+
+  header .nav-botao {
+    background-color: #e50914;
+    border: 1px solid #e50914;
+    color: white;
+
+    padding: 10px 25px;
+    margin-top: 15px;
+    /* margin-right: 15px; */
+    font-size: 12px;
+
+    cursor: pointer;
+    transition: 0.3s ease all;
+  }
+
+  header .nav-botao:hover {
+    background-color: #b81f27;
+    color: white;
+  }
+
+  header .nav-botao-entrar {
+    background-color: #0f0e0e;
+    border: 1px solid gray;
+    color: white;
+
+    padding: 10px 25px;
+    margin-top: 15px;
+    /* margin-right: 5px; */
+    font-size: 12px;
+
+    cursor: pointer;
+    transition: 0.3s ease all;
+  }
+
+  header .nav-botao-entrar:hover {
+    background-color: #3a3939;
+    color: white;
+  }
+
+  /*  ============================== */
+
+  .container {
+    margin-left: 30px;
+  }
+
+  /*filme principal*/
+  .filme-principal {
+    font-size: 16px;
+    background-repeat: no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5) 100%),
+      url('../img/capa-flash.jpg') no-repeat;
+
+    height: 600px;
+    background-size: contain;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .filme-principal .logo-serie {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    position: absolute;
+    top: 55px;
+    width: 200px;
+    height: 80px;
+    margin-bottom: 20px;
+  }
+
+  .filme-principal .titulo {
+    margin-top: 40%;
+    font-size: 18px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+  }
+
+  .filme-principal .titulo-info {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: flex-start;
+    align-items: flex-start;
+    justify-content: flex-start; */
+    color: #aaa;
+    /* margin-right: 5px; */
+    font-size: 12px;
+
+    margin-top: 15px;
+    margin-bottom: 15px;
+    gap: 1px;
+  }
+
+  .filme-principal .descricao {
+    margin-top: 10px;
+    margin-bottom: 15px;
+  }
+
+  .filme-principal .title-data-info-item-label {
+    color: #aaa;
+  }
+
+  .filme-principal .title-data-info {
+    display: flex;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    gap: 5px;
+  }
+
+  .panel-sombra {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    background-color: rgba(30, 30, 30, 0.5);
+    height: 50px;
+    color: #aaa;
+    position: relative;
+
+    /* background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 1.8) 100%);  */
+  }
+
+  .filme-principal .player {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    margin: auto;
+    margin-left: 20vw;
+    width: 180px;
+    height: 150px;
+  }
+
+  .botoes {
+    display: flex;
+    flex-direction: row;
+    /* background-color: #e50914; */
+    margin-bottom: 15px;
+    width: 100%;
+  }
+
+  .botao {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+
+    padding: 20px 30px;
+    /* margin-top: 15px; */
+    margin-right: 10px;
+    margin-left: 10px;
+    font-size: 12px;
+
+    cursor: pointer;
+    transition: 0.3s ease all;
+  }
+
+  .botao:hover {
+    background-color: white;
+    color: black;
+  }
+
+  .botao i {
+    margin-right: 8px;
+  }
+
+  .container {
+    margin-left: 20px;
+  }
+
+  .filme-principal .container {
+    width: 70%;
+  }
+
+  .box-filme {
+    height: 100%;
+    width: 100%;
+    display: block;
+    cursor: pointer;
+  }
+
+  .carrosel-filmes {
+    margin-top: 5px;
+  }
+
+  .carrosel-filmes h5 {
+    margin-top: 8px;
+    color: #aaa;
+    text-align: center;
+  }
+}

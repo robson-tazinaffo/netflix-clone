@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Entre | Netflix</title>
+
+  <!-- <link rel="stylesheet" href="style/main.css"> -->
+  <link rel="stylesheet" href="style/owl/owl.carousel.min.css">
+  <link rel="stylesheet" href="style/owl/owl.theme.default.min.css">
+
+  <!--
+  <link rel="stylesheet" href="style/responsive.css">
+  -->
+</head>
+
+<style>
+  .body {
+    height: 100%;
+    background-repeat: no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5) 100%),
+      url('img/website_background.jpg');
+  }
+
+  /* ============= header ================ */
+
+  header .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  header .logo {
+    margin-left: 5px;
+    color: var(--vermelho);
+    font-family: 'Arial Black', Times;
+    font-size: 40px;
+
+    height: 40px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  header nav a {
+    text-decoration: none;
+    color: #aaa;
+    margin-right: 30px;
+  }
+
+  header nav a:hover {
+    color: #fff;
+  }
+
+  header .nav-botao {
+    background-color: #e50914;
+    border: 1px solid #e50914;
+    color: white;
+
+    padding: 10px 25px;
+    margin-top: 15px;
+    /* margin-right: 15px; */
+    font-size: 12px;
+
+    cursor: pointer;
+    transition: 0.3s ease all;
+  }
+
+  header .nav-botao:hover {
+    background-color: #b81f27;
+    color: white;
+  }
+
+  header .nav-botao-entrar {
+    background-color: #de0c0c;
+    border: 1px solid #de0c0c;
+    color: white;
+
+    padding: 10px 25px;
+    margin-top: 15px;
+    /* margin-right: 5px; */
+    font-size: 12px;
+
+    cursor: pointer;
+    transition: 0.3s ease all;
+  }
+
+  header .nav-botao-entrar:hover {
+    background-color: #de0c0c;
+    border: 1px solid #de0c0c;
+    color: white;
+  }
+
+  /*  ============================== */
+
+
+/* =========================== RESPONSIVO ====================== */
+@media screen and (max-width:700px){
+    /*
+	header .container{
+    display: flex;
+    flex-direction: column;
+    }
+	*/
+
+    .botao{
+        margin-top: 5px;
+        width: 300px;
+    }
+	
+  .titulo-entre {
+    margin-top: 80px;
+    text-align: center;
+    color: white;
+    font-size: 13px;
+  }
+
+  .subtitulo-entre {
+    text-align: center;
+    color: rgb(203, 203, 203);
+    font-size: 10px;
+  }
+
+  .descricao {
+    color: rgb(155, 150, 150);
+    text-align: center;
+    color: rgb(203, 203, 203);
+    font-size: 18px;
+  }
+
+}
+
+@media screen and (min-width:1000px){
+    .botao{
+        margin-top: 5px;
+        width: 300px;
+    }
+	
+  .titulo-entre {
+    margin-top: 80px;
+    text-align: center;
+    color: white;
+    font-size: 23px;
+  }
+
+  .subtitulo-entre {
+    text-align: center;
+    color: rgb(203, 203, 203);
+    font-size: 18px;
+  }
+
+  .descricao {
+    color: rgb(155, 150, 150);
+    text-align: center;
+    color: rgb(203, 203, 203);
+    font-size: 18px;
+  }
+	
+}
+  
+</style>
+
+<body class="body">
+  <header>
+    <div class="container">
+      <img class="logo" src="img/logo-netflix.png" alt="logo da netflix">
+      <nav>
+        <a href="login.html">
+          <button class="nav-botao-entrar">
+            ENTRAR
+          </button>
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- <div class="sombra-left"></div> -->
+    <div class="filme-principal">
+      <!-- <div class="infos"> -->
+      <div class="container">
+        <!-- <div class="logo-serie">
+          <img src="/img/logo-flash.png" alt="logo flash">
+        </div> -->
+        <div class="titulo-entre">
+          <h1>Filmes, séries e muito mais. Sem limites.</h1>
+        </div>
+        <div class="subtitulo-entre">
+          <h1>Assista onde quiser. Cancele quando quiser.</h1>
+        </div>
+        <div class="descricao">
+          <h3>Pronto para assistir? <br> É só clicar em entrar e começar a diversão.</h3>
+        </div>
+      </div>
+  </main>
+
+
+  <!-- <div class="carrosel-filmes">
+    <div class="owl-carousel owl-theme">
+      <div class="item">
+        <img class="box-filme" src="img/slides/1.Piloto.jpg" alt="">
+        <h5>1.Piloto</h5>
+      </div>
+      <div class="item">
+        <img class="box-filme" src="img/slides/2.O homem mais rapido do mundo.jpg" alt="">
+        <h5>2-O homem mais rápido do mundo</h5>
+      </div>
+      <div class="item">
+        <img class="box-filme" src="img/slides/3.O que nao da para ultrapassar.jpg" alt="">
+        <h5>3.O que não dá para ultrapassar</h5>
+      </div>
+      <div class="item">
+        <img class="box-filme" src="img/slides/4.Confianca e tudo.jpg" alt="">
+        <h5>4.Confiança é tudo</h5>
+      </div>
+      <div class="item">
+        <img class="box-filme" src="img/slides/5.Plastique.jpg" alt="">
+        <h5>5.Plastique</h5>
+      </div>
+      <div class="item">
+        <img class="box-filme" src="img/slides/6.Surge o Flash.jpg" alt="">
+        <h5>6.Surge o Flash</h5>
+      </div>
+      <div class="item">
+        <img class="box-filme" src="img/slides/7.Queda de energia.jpg" alt="">
+        <h5>7.Queda de energia</h5>
+      </div>
+      <div class="item">
+        <img class="box-filme" src="img/slides/8.Flash contra Arqueiro.jpg" alt="">
+        <h5>8.Flash contra Arqueiro</h5>
+      </div>
+      <div class="item">
+        <img class="box-filme" src="img/slides/9.O homem de uniforme amarelo.jpg" alt="">
+        <h5>9.O homem de uniforme amarelo</h5>
+      </div>
+      <div class="item">
+        <img class="box-filme" src="img/slides/10.A vinganca dos ladroes.jpg" alt="">
+        <h5>10.A vingança dos ladrôes</h5>
+      </div>
+    </div>
+  </div> -->
+
+</body>
+
+<script src="https://kit.fontawesome.com/b6acbbd85e.js" crossorigin="anonymous"></script>
+<script src="js/owl/jquery.min.js"></script>
+<script src="js/owl/owl.carousel.min.js"></script>
+<script src="js/owl/setup.js"></script>
+
+
+</html>
